@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>X-O game</title>
+    <style>
+      td {
+        width: 150px;
+        height: 150px;
+        border: 1px solid black;
+        text-align: center;
+        cursor: pointer;
+        font-size: 36px;
+      }
+      .pointTd{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      .points{
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+      <table class="table w-25" id="points">
+        <thead>
+          <tr>
+            <th id="first" scope="col">Last</th>
+            <th id="second" scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pointTd" id="point1"></td>
+            <td class="pointTd" id="point2"></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="messages">
+        <h2 id="winner"></h2>
+        <h3 id="same"></h3>
+      </div>
+    <div class="tbl-div p-5">
+      <table class="m-auto" border="1px" id="tbl"></table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
